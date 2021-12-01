@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Dodge_It:jar">
+    <output-path>$USER_HOME$/Desktop/IntelliJ Projects</output-path>
+    <root id="archive" name="Dodge_It.jar">
+      <element id="module-output" name="Dodge_It" />
+      <element id="library" level="project" name="jinput" />
+    </root>
+  </artifact>
+</component>
