@@ -38,8 +38,8 @@ public class SmartEnemy extends GameObject {
         if (spawn_time >= 100) {
 
 
-            float diffX = x - player.getX();
-            float diffY = y - player.getY();
+            float diffX = x - (player.getX() + (MainGame.width/26f)/2.2f);
+            float diffY = y - (player.getY() + (MainGame.height/15f)/2.2f);
             float distance = (float) Math.sqrt(Math.pow(diffX, 2) +
                     Math.pow(diffY, 2));
             if (maingame.state == STATE.PauseMode) {
