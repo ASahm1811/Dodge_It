@@ -185,8 +185,13 @@ public class MainMenu extends MouseAdapter {
         MusicButton.drawMusicButton(g);
         MusicButton.drawMuteLine(g);
         g.setFont(font3b);
-        g.drawString("Press the speaker icon or \"M\" to turn the music on/off",
+        g.drawString("Press the speaker icon or         to turn the music on/off",
                 (float) MainGame.width/70, (float) (MainGame.height/1.065));
+
+        g.fillRoundRect((int) (MainGame.width/5.125), (int) (MainGame.height/1.1), 25, 25, 10,
+                10);
+        g.setColor(Color.WHITE);
+        g.drawString("M", (int) (MainGame.width/5.025), (int) (MainGame.height/1.07));
 
         // Selection color box
         SelectionColorBox.drawSelectionBox(g);

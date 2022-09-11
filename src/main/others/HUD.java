@@ -8,7 +8,6 @@ import java.awt.*;
 public class HUD {
 
     public void render(Graphics2D g) {
-
         // draw countdown
         if (Spawner.score < 0) {
             g.setFont(MainMenu.font3a);
@@ -43,8 +42,13 @@ public class HUD {
 
             // PauseMenu notifier
             g.setColor(Color.BLACK);
-            g.drawString("Press \"P\" to pause the game" , (float) (MainGame.width/70),
+            g.drawString("Press        to pause the game" , (float) (MainGame.width/70),
                     (float) (MainGame.height/20));
+
+            g.fillRoundRect((int) (MainGame.width/14.125), (MainGame.height/55), 30, 30, 10,
+                    10);
+            g.setColor(Color.WHITE);
+            g.drawString("P", (int) (MainGame.width/13.125), (MainGame.height/20));
         }
     }
 
